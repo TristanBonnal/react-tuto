@@ -34,13 +34,13 @@ function App() {
         </ul>
 
         <footer>
-            <Footer />
+            <Footer color="green">Je suis footer</Footer>
         </footer>
     </>
 }
 
-function Footer() {
-    return ('Je suis le footer')
+function Footer({color, ...props}) {
+    return <div style={{color: color, backgroundColor: "red"}} {...props}/>  // children est ici transmis dans les props avec le spread operator, on l'utilise du coup sans le div fermant.
 }
 
 export default App
