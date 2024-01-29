@@ -1,5 +1,5 @@
-import { useState } from 'react'
-
+import React from 'react'
+import Counter from './Counter.jsx'
 function App() {
     const style = {
         color: 'green',
@@ -33,6 +33,8 @@ function App() {
             })}
         </ul>
 
+        <Counter/>
+
         <footer>
             <Footer color="green">Je suis footer</Footer>
         </footer>
@@ -40,7 +42,7 @@ function App() {
 }
 
 function Footer({color, ...props}) {
-    return <div style={{color: color, backgroundColor: "red"}} {...props}/>  // children est ici transmis dans les props avec le spread operator, on l'utilise du coup sans le div fermant.
+    return <div style={{color: color, backgroundColor: "grey", marginTop: "100px"}} {...props}/>  // children est ici transmis dans les props avec le spread operator, on l'utilise du coup sans le div fermant.
 }
 
 export default App
