@@ -1,5 +1,6 @@
 import React from 'react'
 import Counter from './Counter.jsx'
+import Form from "./Form.jsx";
 function App() {
     const style = {
         color: 'green',
@@ -34,6 +35,8 @@ function App() {
         </ul>
 
         <Counter/>
+
+        <Form/>
 
         <footer>
             <Footer color="green">Je suis footer</Footer>
