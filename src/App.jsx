@@ -1,6 +1,7 @@
 import React from 'react'
 import Counter from './Counter.jsx'
 import Form from "./Form.jsx";
+import Cgu from "./Cgu.jsx";
 function App() {
     const style = {
         color: 'green',
@@ -37,6 +38,8 @@ function App() {
         <Counter/>
 
         <Form/>
+
+        <Cgu/>
 
         <footer>
             <Footer color="green">Je suis footer</Footer>
